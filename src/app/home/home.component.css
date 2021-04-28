@@ -1,0 +1,31 @@
+#TourneyTimeTitle{
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+#TTBanner{
+    width: 100%;
+    filter: brightness(30%);
+}
+button{
+    background-color: gray;
+    border-color: gray;
+}
+
+#gamesdescription{
+    text-align: center;
+    font-size: 3vw;
+    font-family: Impact;
+    background-color: gray;
+}
+#registerbox{
+    text-align: center;
+    background-color: rgb(200,200,200);
+}
+#registerbox p{
+    font-size: 3vw;
+    font-family:Impact;
+}

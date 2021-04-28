@@ -1,0 +1,18 @@
+tr td:nth-child(1){
+    width: 200px;
+}
+.lblue-card{
+    background-color: rgb(198, 198, 255);
+}
+.bg-gris{
+    background-color: rgb(200,200,200);
+}
+.centrado{
+    text-align: center;
+}
+.heigth100{
+    height: 100%;
+}
+.width100{
+    width: 100%;
+}

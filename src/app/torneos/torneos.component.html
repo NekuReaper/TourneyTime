@@ -1,0 +1,81 @@
+<div class="p-grid" id="cabecera">
+    <div style="position: absolute; right: 0px;">
+        <button pButton class="p-m-2">NUEVO TORNEO</button>
+    </div>
+    <div class="p-col">
+        <h1 style="font-size: 2.5vw;">TORNEOS</h1>
+    </div>
+</div>
+<!--Grid MIS TORNEOS-->
+<div class="p-grid p-p-3">
+    <div class="p-col-12">
+        <div class="p-grid">
+            <div class="p-col-12">
+                <p style="font-family: impact; font-size: 2vw;">MIS TORNEOS</p>
+                <div class="lineaseparatoria"></div>
+            </div>
+            <!--Preview de un torneo.-->
+            <div class="p-col-3">
+                <a [routerLink]="['/torneos', 1]" style="text-decoration: none;">
+                    <div
+                        style="border: solid 1px gray; background-color: rgb(225,225,225); color: gray; text-align: center;">
+                        <h4>14/4/2021<br>
+                            ⌚ 14:45 <br>
+                            Z-Drop #7
+                        </h4>
+                        <div style="background-color: gray; color:white; font-size: 2vw;">Super Smash Bros. Ultimate</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Grid TORNEOS INSCRITOS-->
+<div class="p-grid p-p-3">
+    <div class="p-col-12">
+        <div class="p-grid">
+            <div class="p-col-12">
+                <p style="font-family: impact; font-size: 2vw;">TORNEOS INSCRITOS</p>
+                <div class="lineaseparatoria"></div>
+            </div>
+            <!--Preview de un torneo.-->
+            <div class="p-col-3">
+                <a [routerLink]="['/torneos', 2]"  style="text-decoration: none;">
+                    <div
+                        style="border: solid 1px gray; background-color: rgb(225,225,225); color: gray; text-align: center;">
+                        <h4>14/4/2021<br>
+                            ⌚ 14:45 <br>
+                            Z-Drop #7
+                        </h4>
+                        <div style="background-color: gray; color:white; font-size: 2vw;">Super Smash Bros. Ultimate</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Grid TORNEOS ACTIVOS-->
+<div class="p-grid p-p-3">
+    <div class="p-col-12">
+        <div class="p-grid">
+            <div class="p-col-12">
+                <div *ngIf="true" style="float: right;"><a href="">Ver más</a></div>
+                <div style="font-family: impact; font-size: 2vw;">TORNEOS ACTIVOS</div>
+                <div class="lineaseparatoria"></div>
+            </div>
+            <!--Preview de un torneo.-->
+            <div class="p-col-3" *ngFor="number of [0,1,2,3]">
+                <a [routerLink]="['/torneos', 3]"  style="text-decoration: none;">
+                    <div
+                        style="border: solid 1px gray; background-color: rgb(225,225,225); color: gray; text-align: center;">
+                        <h4>14/4/2021<br>
+                            ⌚ 14:45 <br>
+                            Z-Drop #7
+                        </h4>
+                        <div style="background-color: gray; color:white; font-size: 2vw;">Super Smash Bros. Ultimate</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

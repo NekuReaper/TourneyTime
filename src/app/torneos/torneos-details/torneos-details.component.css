@@ -1,0 +1,12 @@
+#cabecera{
+    background-color: rgb(200, 200, 200);
+    position: relative;
+}
+#cabecera h1{
+    font-family: impact;
+}
+.lineaseparatoria{
+    background-color: black;
+    width: 100%;
+    height: 0.7vw;
+}

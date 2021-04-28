@@ -1,0 +1,33 @@
+<div class="p-grid">
+    <!--Ícono Tourney Time-->
+    <div style="text-align: center;  background-image: url(../assets/imgs/home/pacman_bg.jpg);background-size: contain;" class="p-col-12">  
+      <a class="" href="#">
+        <img src="../assets/imgs/calaveraTT_transparent.png" width="6%" alt="Ícono de Tourney Time." style="border-radius: 50%; background-color: white;">
+      </a>
+    </div>
+    <!--Enlaces-->
+    <div class="p-col-12" style="background-color: rgb(168, 168, 168); color: white;">
+      <!--PRUEBAS-->
+      <div *ngIf="title=='/';else loggedIn">
+        <div style="padding: 5px; text-align: right;">  
+          <button pButton class="p-m-1">Identificarse</button>
+          <button pButton class="p-m-1">Registrarse</button>
+        </div>
+      </div>
+      <ng-template #loggedIn>
+        <div style="text-align: center;">
+          <button pButton class="p-m-1" routerLink="/perfil">PERFIL</button>
+          <button pButton class="p-m-1" routerLink="/torneos">TORNEOS</button>
+          <button pButton class="p-m-1" routerLink="/ranking">RANKING</button>
+          <button pButton class="p-m-1" routerLink="/tienda">TIENDA</button>
+          <button pButton class="p-m-1" routerLink="/mensajeria">MENSAJERÍA</button>
+          <button pButton class="p-m-1">ACADEMIA</button>
+        </div>
+      </ng-template>
+    </div>
+</div>
+<!--PRUEBAS-->
+<div *ngIf="title!='/'" style="position: absolute;top: 0px;right: 0px;color: white;">
+  | <a href="" class="p-m-2 optionBar">Cerrar Sesión</a> |
+    <a href="" class="p-m-2 optionBar" routerLink="/perfil"><p-avatar label="N" shape="circle" style="vertical-align: center; color:black;"></p-avatar> Nombre Usuario</a> |
+</div>

@@ -1,0 +1,16 @@
+#cabecera, .bg-gris{
+    background-color: rgb(200, 200, 200);
+}
+#cabecera h1{
+    font-family: Impact; color: gray;
+}
+.lblue-card{
+    background-color: rgb(198, 198, 255);
+}
+button{
+    background-color: gray;
+    border-color: gray;
+}
+.centrado{
+    text-align: center;
+}

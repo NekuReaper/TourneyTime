@@ -1,15 +1,82 @@
+<!--TourneyTime presentation-->
 <div class="p-grid">
-    <div class="p-col-12">
-        <div class="p-grid">
-            <!--Primera caja-->
-            <div class="p-col-4" style="background-color: blue;">a</div>
-            <!--Segunda caja-->
-            <div class="p-col-4" style="background-color: blueviolet;">b</div>
-            <!--Tercera caja-->
-            <div class="p-col-4" style="background-color: violet;">c</div>
+    <div class="p-col-12" style="position: relative;">
+        <div id="TourneyTimeTitle">
+            <p style="font-size:6vw;">TOURNEY TIME</p>
+            <p style="font-size:2vw;">Compete, Train, Track & Connect</p>
         </div>
+        <img id="TTBanner" src="../../assets/imgs/home/TourneyTimeBackground.gif" alt="TourneyTime background gif">
     </div>
-    <div class="p-col-2">
-        registro
+    <!--¿Qué es Tourney Time?-->
+    <div class="p-col-12" style="font-size:4vw; text-align: center;">
+        ¿Qué es Tourney Time?
+    </div>
+    <div class="p-col-6">
+        <p-card>
+            Tourney Time es una web que apoya la escena competitiva de los e-Sports,
+            donde puedes competir en videojuegos, socializar con gente que tiene el mismo hobby
+            y comprar merchan. Nuestro público objetivo no sólo se centra en los jugadores más competitivos,
+            si no que también da soporte a aquellos que quieran mejorar sus habilidades en la academia
+            y medirse contra otros de forma online.
+        </p-card>
+    </div>
+    <div class="p-col-6">
+        <p-card>
+            También puedes aparecer en el ranking dependiendo del número de victorias, crear y gestionar tus propios
+            torneos con tus propias reglas.
+            <br>
+            Además, cuanto más se use la web, más puntos ganas. Estos puntos servirán para adquirir ítems de
+            la web o productos físicos de la tienda que también se pueden comprar con dinero real.
+        </p-card>
+    </div>
+    <hr>
+    <!--Cards-->
+    <div class="p-grid">
+        <div class="p-col-12 p-m-3" id="gamesdescription">
+            Estos son algunos de los juegos con más actividad en torneos.
+        </div>
+        <div class="p-col-12 p-sm-6 p-lg-4">
+            <!--Super Smash Bros. Ultimate Card-->
+            <p-card header="Super Smash Bros. Ultimate" subheader="¡Todo el mundo está aquí!"
+                styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img alt="Super Smash Bros. Ultimate Card" src="../../assets/imgs/home/supersmashbrosultimate.jpg">
+                </ng-template>
+                <p>Auténtico duelo de titanes con una de las comunidades de Fighting Games más activas.
+                    Podrás jugar con los personajes más carismáticos de distintas sagas de videojuegos:
+                    ¡Super Smash Bros. Ultimate para Nintendo Switch!</p>
+            </p-card>
+        </div>
+        <div class="p-col-12 p-sm-6 p-lg-4">
+            <!--Rivals of Aether Card-->
+            <p-card header="Rivals of Aether" subheader="Únete a la causa." styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="../../assets/imgs/home/rivalsofaether.jpg">
+                </ng-template>
+                <p>Rivals of Aether es un luego de lucha indie en 2D, similar a Super Smash Bros, pero con un diseño
+                    artístico Pixel Art.
+                    Lo mejor de éste juego es que puedes importar tus propias creaciones de personajes para hacerlos
+                    luchar incluso online.
+                </p>
+            </p-card>
+        </div>
+        <div class="p-col-12 p-sm-12 p-lg-4">
+            <!--League of Legend Card-->
+            <p-card header="League of Legends" subheader='"Bienvenido a la grieta del invocador."'
+                styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="../../assets/imgs/home/leagueoflegends.jpg">
+                </ng-template>
+                <p>League of Legends es uno de los juegos más jugados a nivel competitivo. Es un juego en equipo con más
+                    de 140 campeones entre los que elegir.
+                    Elige tu campeón, lánzate en medio del combate, apoya a tus aliados... Encontrarás tu sitio en la
+                    Grieta.
+                </p>
+            </p-card>
+        </div>
+        <div class="p-col p-p-6" id="registerbox">
+            <p>¡Regístrate ya para empezar un duelo!</p>
+            <button pButton class="p-button-lg">Registrarse</button>
+        </div>
     </div>
 </div>
